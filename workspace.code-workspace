@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\python\\pythonProject20\\Ejercicios"
+		},
+		{
+			"path": "..\\python\\pythonProject20\\Ejercicios Mintic"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Ejercicios"
+	}
+}

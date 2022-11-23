@@ -1,0 +1,68 @@
+/* Flechas de navegación */
+a.mas, a.menos {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    z-index: 10;
+    width: 20px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+    color: white;
+    background: #333;
+    text-decoration: none;
+    transition: .5s margin ease;
+    }
+    a.mas {
+    left: 100%;
+    margin-left: 100px;
+    }
+    #slider-wrapper:hover a.mas {
+    margin-left: -40px;
+    }
+    a.menos {
+    left: 0;
+    margin-left: -100px;
+    }
+    #slider-wrapper:hover a.menos {
+    margin-left: 10px;
+    }
+    .slider-prev{
+        animation: arrowPrev .3s;
+        -webkit-animation: arrowPrev .3s;
+    }
+    .slider-next{
+        animation: arrowNext .3s;
+        -webkit-animation:arrowNext .3s;
+    }
+    
+    @keyframes arrowPrev{
+        0%{opacity:0;
+            right:-100%;}
+        20%{opacity:0.2;
+            right:-80%;}
+        40%{opacity:0.4;
+            right:-60%;}
+        60%{opacity:0.6;
+            right:-40%;}
+        80%{opacity:0.8;
+            right:-20%;}
+        100%{right:0%;
+            opacity:1;}
+    }
+    
+    @keyframes arrowNext{
+        0%{opacity:0;
+            left:-100%;}
+        20%{opacity:0.2;
+            left:-80%;}
+        40%{opacity:0.4;
+            left:-60%;}
+        60%{opacity:0.6;
+            left:-40%;}
+        80%{opacity:0.8;
+            left:-20%;}
+        100%{left:0%;
+            opacity:1;}
+    }
